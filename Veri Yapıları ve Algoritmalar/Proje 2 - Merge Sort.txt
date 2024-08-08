@@ -1,0 +1,28 @@
+Proje 2
+
+[16,21,11,8,12,22] -> Merge Sort
+
+Yukarıdaki dizinin sort türüne göre aşamalarını yazınız.
+Big-O gösterimini yazınız.
+
+ÇÖZÜM:
+
+Dizi tek eleman kalıncaya kadar ikiye bölünür:
+
+[16, 21, 11], [8, 12, 22]
+[16], [21, 11], [8, 12], [22]
+[16], [21], [11], [8], [12], [22]
+
+Kendi içinde sıralama yapılarak elemanlar birleştirilir.
+
+[16], [11, 21], [8, 12], [22]
+[11, 16, 21], [8, 12, 22]
+[8, 11, 12, 16, 21, 22]
+
+Dizilerdeki eleman sayısı her adımda yarısı kadar azaldığından 2^x = n => x = log(n) olur.
+
+Son adımda n tane işlem gerekeceğinden;
+
+O(n) = nlog(n) olur.
+
+
